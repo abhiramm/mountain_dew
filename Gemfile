@@ -15,7 +15,8 @@ end
 
 # development gems
 group :development, :test do
-  gem 'sqlite3', '~> 1.3.8'    # dev & test database
+  #gem 'sqlite3', '~> 1.3.8'    # dev & test database
+  gem 'pg'
   gem 'figaro', '~> 0.7.0'     # env variables
 end
 
@@ -38,3 +39,7 @@ group :development, :test do
 end
 
 gem 'bootstrap-sass', '~> 3.0.3.0'
+
+#For heroku
+
+gem 'rails_12factor', group: :production

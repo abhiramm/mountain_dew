@@ -38,4 +38,5 @@ Lottery::Application.configure do
     user_name: ENV["SMTP_USER"],
     password: ENV["SMTP_PWD"]
   }
+  
 end
